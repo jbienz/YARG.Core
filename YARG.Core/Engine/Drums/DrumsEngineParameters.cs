@@ -14,7 +14,7 @@ namespace YARG.Core.Engine.Drums
         /// <summary>
         /// What mode the inputs should be processed in.
         /// </summary>
-        public DrumMode Mode { get; private set; }
+        public DrumMode Mode;
 
         public DrumsEngineParameters()
         {
