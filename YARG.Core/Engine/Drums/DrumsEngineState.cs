@@ -1,4 +1,5 @@
 ﻿using YARG.Core.Chart;
+using YARG.Core.Input;
 
 namespace YARG.Core.Engine.Drums
 {
@@ -9,12 +10,16 @@ namespace YARG.Core.Engine.Drums
         /// be based off of <see cref="FourLaneDrumPad"/> or <see cref="FiveLaneDrumPad"/>.
         /// </summary>
         public int? PadHit;
+        public float? HitVelocity;
+        public DrumsAction? Action;
 
         public override void Reset()
         {
             base.Reset();
 
             PadHit = null;
+            HitVelocity = null;
+            Action = null;
         }
     }
 }
