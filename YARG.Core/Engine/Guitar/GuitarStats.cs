@@ -20,11 +20,15 @@ namespace YARG.Core.Engine.Guitar
         public int GhostInputs;
 
         /// <summary>
-        /// Amount of Star Power/Overdrive gained from whammy during the current whammy period.
+        /// Score earned from holding sustains.
+        /// </summary>
+        public int SustainScore;
+
+        /// <summary>
+        /// Amount of Star Power ticks gained from whammy.
         /// </summary>
         public uint WhammyTicks;
 
-        public int SustainScore;
 
         public GuitarStats()
         {
